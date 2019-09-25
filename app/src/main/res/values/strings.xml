@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Dev portifolio</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="about">I study at University of Tashkent information technologies in Uzbekistan at the faculty of computer engineering. 1 year experience. I am interested in Web technology and IOS programming And im going to study this technologies in near future:  Android skills  Retrofit, Butterknife, OkHttp, Picasso, Glide, RxJava, RxAndroid Java, Kotlin knowledge   Fragments and activities interaction, Intents, content providers   Support library (CardView, RecyclerView, etc)</string>
+    <string name="work">*School-Id \n*Translate from image \n*Note app with MVVM</string>
+    <string name="skill">*Cpp \n*Java \n*Kotlin \n*Html,Css \n*Android studio</string>
+</resources>

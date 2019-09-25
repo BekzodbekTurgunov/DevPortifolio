@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:id="@+id/cardView"
+        app:cardElevation="5dp"
+        android:layout_marginTop="180dp"
+        app:cardBackgroundColor="#ccc"
+        android:layout_centerHorizontal="true"
+        android:layout_height="55dp">
+        <RelativeLayout
+
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/getInTouch"
+                android:text="Get in touch"
+                android:autoLink="phone"
+                android:textColor="@color/colorWebsiteTab"
+                android:layout_centerVertical="true"
+                android:drawableBottom="@drawable/call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardCornerRadius="14dp"
+        android:layout_centerHorizontal="true"
+        app:cardBackgroundColor="@color/colorWebsiteTab"
+
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginLeft="14dp">
+
+        <RelativeLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="96dp"
+                android:src="@drawable/src"
+                android:layout_height="96dp"
+                android:layout_alignParentRight="true"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/colorAccent"/>
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:id="@+id/devName"
+                android:text="Bekzodbek \n\t\t\t\t\t\t\t\t\t\t\t\tTurgunov"
+                app:fontFamily="@font/alfa_slab_one"
+                android:textSize="29dp"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="7dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/devProfession"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/devName"
+                android:layout_marginLeft="5dp"
+                android:text="Android developer"
+                android:layout_marginTop="8dp"
+                android:textStyle="italic"
+                android:textColor="@android:color/white"
+                android:textSize="22dp"
+                 />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_below="@id/cardView"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+      <com.google.android.material.tabs.TabLayout
+          android:id="@+id/tabLayoutId"
+          android:background="@color/colorPageTab"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+
+      </com.google.android.material.tabs.TabLayout>
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_marginTop="45dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
+
+</RelativeLayout>
